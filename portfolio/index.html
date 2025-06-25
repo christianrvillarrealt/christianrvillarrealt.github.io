@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Christian Villarreal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Christian Villarreal</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero bg-primary text-white text-center">
+  <div class="container" data-aos="fade-up">
+    <img src="assets/images/profile.jpeg" alt="Profile picture of Christian Villarreal" class="profile-img mb-4">
+    <h1 class="display-1">Christian Villarreal</h1>
+    <h2 class="display-6">Robotics & Digital Systems Engineering Student</h2>
+    <h2 class="lead">Tecnológico de Monterrey, Campus Monterrey</h2>
+    <a href="#projects" class="btn btn-light m-2">View Projects</a>
+    <a href="resume.pdf" class="btn btn-outline-light m-2">Download Resume</a>
+  </div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="py-5">
+  <div class="container" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p> I'm a third-year Robotics & Digital Systems student at Tecnológico de Monterrey.
+    I am currently developing an autonomous navigation, control system, and computer vision based differential drive robot project with Manchester Robotics Ltd., 
+    a software and electronics member of the Unmanned Surface Vehicle project at VantTec, a service Intern at Multi-Robotic Systems Laboratory and currently 
+    learning about and developing autonomous navigation, control systems, computer vision, and AI projects.</p>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="bg-light py-5">
+  <div class="container" data-aos="fade-up">
+    <h2>Skills</h2>
+    <ul>
+      <li>Programming: Python, C++, C, C#, MATLAB, Javascript, Dart</li>
+      <li>Frameworks: ROS 2, OpenCV, Open3D</li>
+      <li>Simulation: CoppeliaSim, Gazebo</li>
+      <li>Embedded Systems: NVIDIA Jetson, STM32, Raspberry Pi, Arduino</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-5">
+  <div class="container" data-aos="fade-up">
+    <h2>Projects</h2>
+
+    <div class="row mb-5">
+
+      <div class="col-md-6 mb-4">
+        <h4>Dexterous Manipulation of 9 D.O.F Robotic Hand</h4>
+        <a href="https://youtu.be/xguSSPaRahc?si=GPkyJPqxkQNMMWMv">
+          <img src="assets/images/fixedPointRollingSliding.png" class="project-media">
+        </a>
+        <p>Final project of the Kinematics module for dexterous manipulation in a three-fingered robotic hand with 9 D.O.F.</p>
+        <ul>
+          <li>Applies the Fixed-Point Rolling-Sliding motion planning algorithm for dexterous manipulation in a three-fingered robotic hand with three degrees of freedom each.</li>
+          <li>The algorithm considers kinematic constraints, grip stability, and compliant movements, enabling precise object manipulation.</li>
+          <li>The implementation included mathematical analysis, the definition of kinematic equations, the simulation of the 9 D.O.F hand, validation done with examples, and an analysis of future improvements for performance optimization.</li>
+          <li>The results demonstrate the viability of the algorithm, suggesting improvements for future applications in advanced robotics.</li>
+        </ul>
+        <a href="https://github.com/richy-gs/TE3001B_ws/blob/main/src/Week5/retoFinal/finalProject.java" class="btn btn-sm btn-primary">View on GitHub</a>
+      </div>
+
+      <div class="col-md-6 mb-4 border-start">
+        <h4>PID DC Motor Control with ROS2 and Micro-ROS</h4>
+        <a href="https://youtu.be/J7guC097kAk?si=VqbC4QT6imFDmymp">
+          <img src="assets/images/dcMotorPidControl.png" class="project-media">
+        </a>
+        <p>Main project for the undergraduate course "Robotics Fundamentals" which 
+          applies Digital Control System Design, ROS2 Interfacing, micro-ROS, and 
+          Experimental Mathematical Model Coefficients Determination and Controller 
+          Performance Validation. This project was made in collaboration with Manchester 
+          Robotics Ltd. as a training partner. The project aimed to precisely control the 
+          velocity of a DC motor.</p>
+        <ul>
+          <li>A PID controller was implemented within the ROS2 and micro-ROS robotics frameworks that simplify robotic application development bridged with embedded and deep-embedded robot components.</li>
+          <li>The system receives via a ROS2 topic a variable reference angular velocity value generated by a setpoint node which represents the desired angular velocity.</li>
+          <li>A motor control node uses this data to generate a control signal based on the encoder information to determine the current angular velocity value.</li>
+        </ul>
+        <a href="https://github.com/richy-gs/TE3001B_ws/tree/main" class="btn btn-sm btn-primary">View on GitHub</a>
+      </div>
+
+    </div>
+  
+     <div class="row mb-5">
+
+      <div class="col-md-6 mb-4">
+        <h4>Prototype Tractor Dual-Mode Waypoint Navigation System</h4>
+        <a href="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmppZG5za2Q0cHVjeWR3ajFzZmpkeHp0eHIyM29mNGp1bWphNHRvMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Yjzywz66iGjzpVaOJq/giphy.gif">
+          <img src="assets/images/johnDeereTractorPrototype.jpeg" class="project-media">
+        </a>
+        <a href="https://giphy.com/gifs/4kTNzw3PUjIJlabFVd">
+          <img src="assets/images/customPCB.png" class="project-media">
+        </a>
+        <p>Main project of the undergraduate course "Design of Advanced Embedded Systems" 
+          which implements Design and Analysis of Algorithms, Digital Signal Processing, 
+          Shared-Memory Architecture, and Communication Interfaces. This project was made 
+          in collaboration with John Deere as a training partner.</p>
+        <ul>
+          <li>The project consists of a dual-mode waypoint navigation system.</li>
+          <li>In internal mode, the system utilizes encoder-based odometry and IMU 
+            orientation for waypoint following. Raw counts measured from wheel-mounted 
+            encoders, pre-processed by an Arduino Nano, and transmitted to the main MCU 
+            via CAN for distance conversion and pose data obtained from an MPU6050 IMU are fused.</li>
+          <li>In external mode, it interfaces with John Deere's GPS for marker position-based navigation.</li>
+          <li>The results demonstrate the viability of the algorithm, suggesting improvements for future applications 
+            in advanced robotics.</li>
+          <li>The system involves a tricycle-style vehicle representative of a John Deere tractor prototype. It employs a 
+            NUCLEO-H745ZI-Q STM32 development board to execute motion control with synchronized front steering and differential 
+            rear drive.</li>
+          <li>A shield-style PCB board was also designed to interface with the STM32 board to integrate various components and 
+            connection interfaces required for the tractor navigation system.</li>
+        </ul>
+        <a href="https://github.com/CEJ2-Robotics" class="btn btn-sm btn-primary">View on GitHub</a>
+      </div>
+
+      <div class="col-md-6 mb-4 border-start">
+        <h4>Automatic Analog and Digital Control Loops in a Dynamic Process</h4>
+        <a href="https://youtu.be/D7xXYQPuH7U?si=hng_I_XU04dpZf-X">
+          <img src="assets/images/analogMotorController.jpeg" class="project-media">
+        </a>
+        <p>This project applied Classic/Modern Control Theory, Temporal Analysis, 
+          Computerized Control, and System Identification to regulate a DC motor's 
+          shaft position using an Analog PID Controller.</p>
+        <ul>
+          <li>The Analog PID Controller was implemented with operational amplifiers, resistors, capacitors, and potentiometers for tuning.</li>
+          <li>An AS5600 magnetic encoder was incorporated to provide angular feedback via a 3D-printed setup.</li>
+          <li>The circuit consisted of three phases: A subtractor that calculated the error, a PID for proportional, integral, and derivative value summation, and an inverter.</li>
+          <li>A motor control node uses this data to generate a control signal based on the encoder information to determine the current angular velocity value.</li>
+          <li>The controller was tuned manually via potentiometers and its performance was evaluated with an oscilloscope.</li>
+        </ul>
+        <a href="https://youtu.be/Ek2tQYjlYt8?si=GLUgRfZ6bOQfeMzO">
+          <img src="assets/images/digitalMotorController.jpeg" class="project-media">
+        </a>
+        <p>This project applied Classic/Modern Control Theory, Temporal Analysis, 
+          Computerized Control, and System Identification to regulate a DC motor's 
+          shaft position using a Digital PID Controller.</p>
+        <ul>
+          <li>The Analog PID Controller was implemented with operational amplifiers, resistors, capacitors, and potentiometers for tuning.</li>
+          <li>As software, MATLAB (System Identification, PID Tuner, Simulink), STM32Cube IDE, Arduino IDE, and Excel were used. </li>
+          <li> The motor system was identified via pseudo-random PWM inputs from Arduino that generated motor response data, System Identification 
+            analyzed CSV logs of total angle, velocity, and time to derive a 97.87% accurate transfer function, and PID Tuner optimized parameters for 
+            faster, and more precise digital control.</li>
+        </ul>
+        <a href="https://github.com/saucesaft/discrete_motor_pid" class="btn btn-sm btn-primary">View on GitHub</a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Resume Section -->
+<section id="resume" class="bg-light py-5">
+  <div class="container" data-aos="fade-up">
+    <h2>Resume</h2>
+    <p>Download my latest CV for more details about my education, experience, and technical skills.</p>
+    <a href="resume.pdf" class="btn btn-primary">Download Resume</a>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+  <div class="container" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>Email: ruloco@example.com</p>
+    <p>GitHub: <a href="https://github.com/christianrvillarrealt" target="_blank">github.com/yourusername</a></p>
+    <p>LinkedIn: <a href="www.linkedin.com/in/christianrvillarrealt" target="_blank">linkedin.com/in/yourusername</a></p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+  <p>&copy; 2025 Christian Villarreal. All rights reserved.</p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
