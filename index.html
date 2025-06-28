@@ -37,7 +37,7 @@
     <h2 class="display-6">Robotics & Digital Systems Engineering Student</h2>
     <h2 class="lead">Tecnológico de Monterrey, Campus Monterrey</h2>
     <a href="#projects" class="btn btn-light m-2">View Projects</a>
-    <a href="resume.pdf" class="btn btn-outline-light m-2">Download Resume</a>
+    <a href="ChristianVillarreal_CV_2025_ENG.pdf" class="btn btn-outline-light m-2">Download Resume</a>
   </div>
 </header>
 
@@ -69,6 +69,47 @@
 <section id="projects" class="py-5">
   <div class="container" data-aos="fade-up">
     <h2>Projects</h2>
+
+        <div class="row mb-5">
+
+      <div class="col-md-6 mb-4">
+        <h4>Autonomous Navigation System with Vision, Machine Learning and Control</h4>
+        <a href="https://youtu.be/xguSSPaRahc?si=GPkyJPqxkQNMMWMv">
+          <img src="portfolio/assets/images/autonomousNavigationSystem.png" class="project-media">
+        </a>
+        <p>Final project of the Kinematics module for dexterous manipulation in a three-fingered robotic hand with 9 D.O.F.</p>
+        <ul>
+          <li>Applies the Fixed-Point Rolling-Sliding motion planning algorithm for dexterous manipulation in a three-fingered robotic hand with three degrees of freedom each.</li>
+          <li>The algorithm considers kinematic constraints, grip stability, and compliant movements, enabling precise object manipulation.</li>
+          <li>The implementation included mathematical analysis, the definition of kinematic equations, the simulation of the 9 D.O.F hand, validation done with examples, and an analysis of future improvements for performance optimization.</li>
+          <li>The results demonstrate the viability of the algorithm, suggesting improvements for future applications in advanced robotics.</li>
+        </ul>
+        <a href="https://github.com/richy-gs/TE3001B_ws/blob/main/src/Week5/retoFinal/finalProject.java" class="btn btn-sm btn-primary">View on GitHub</a>
+      </div>
+
+      <div class="col-md-6 mb-4 border-start">
+        <h4>Visual Tracking Surveillance of Land Mobile Robots by Unmanned Aerial Vehicle</h4>
+        <a href="https://youtu.be/-qD8aGkvTdU?si=2-cTGjXG_uDlvVOv">
+          <img src="portfolio/assets/images/visualTrackingSurveillanceDrone.png" class="project-media">
+        </a>
+        <p>The project consisted of the development of a DJI RoboMaster TT unmanned aerial vehicle with Image-Based Visual Dynamic Servoing capabilities 
+          in order to patrol and monitor the activity of a differential drive robot called Puzzlebot produced by Manchester Robotics Ltd. 
+          This robot will fly an arbitrary trajectory while the drone will seek to maintain a continuous association with it and its location via an 
+          ArUco marker between frames for full visualization and monitoring of the robot. After the Puzzlebot completes its trajectory and the drone runs out of 
+          flight time, the drone will need to maneuver a landing strategy.</p>
+        <ul>
+          <li>The differential drive robot called Puzzlebot, whose trajectory is independent of any eternal robot. In theory, the robot can perform any trajectory.</li>
+          <li>The DJI RoboMaster TT unmanned aerial vehicle will implement robot monitoring actions through its lower camera using the Visual Tracking technique.</li> 
+          <li>The drone will begin taking off before the Puzzlebot moves to center itself on it. As the robot moves, the drone uses OpenCV detection for ArUco markers to find the marker in its video stream. 
+            It also uses PD controllers to adjust the drone's position: one for left/right movement based on the marker's position on the x-axis and the other for forward/backward movement based on the marker's 
+            position on the y-axis. It also maintains altitude with simple height control, keeps the height within a tolerance range of ±10 cm, and manages the loss of marker detection when hovering.</li> 
+          <li>The execution flow is as follows: Initializes the connection of the drone, the camera, and the Puzzlebot to begin its trajectory. The drone takes off and climbs to the target altitude. 
+            It enters the control loop to track markers. Finally, when the drone runs out of flight time or is interrupted by the user, it must land.</li>
+        </ul>
+        <a href="https://github.com/richy-gs/TE3001B_ws/tree/main" class="btn btn-sm btn-primary">View on GitHub</a>
+      </div>
+
+    </div>
 
     <div class="row mb-5">
 
@@ -173,6 +214,106 @@
 
     </div>
 
+    <div class="row mb-5">
+
+      <div class="col-md-6 mb-4">
+        <h4>John Deere Tractor Automatic Transmission Controller Prototype</h4>
+        <a href="https://youtu.be/WkgfOnD-oJ0?si=icYrofkuNr4aAWwo">
+          <img src="portfolio/assets/images/johnDeereAutomaticTransmissionController.jpeg" class="project-media">
+        </a>
+        <p>Main project for the undergraduate course "System Design on Chip" which applies STM32 Microcontrollers, 
+          Raspberry Pi Microprocessors, Computational Organization, Embedded Linux, and Real-Time Operating System (RTOS). 
+          This project was made in collaboration with John Deere as a training partner.</p>
+        <ul>
+          <li>The project aimed to simulate the automatic transmission controller of a driving John Deere tractor by integrating 
+            STM32 and Raspberry Pi into a prototype.</li>
+          <li>An STM32 NUCLEO-F103RB microcontroller processed in a rate-monotonic scheduling (RMS) priority algorithm motor revolutions 
+            per minute and agricultural tractor velocity, marching and acceleration data to visualize in an LCD 16x2 screen and transfer to a 
+            Raspberry Pi 3 via UART in a Python developed graphical interface to show historical data. </li>
+          <li>A potentiometer was used to manipulate the simulated tractor's acceleration and a matrix keypad to control braking and traction direction. </li>
+          <li>The data is then transmitted to an LCD screen and to an interface made in Python inside the Raspberry Pi via UART. </li>
+          <li>The program was divided into tasks whose required execution times were measured and priorities were determined based on their importance.</li>
+        </ul>
+        <a href="https://github.com/saucesaft/tractor_sim.git" class="btn btn-sm btn-primary">View on GitHub</a>
+      </div>
+
+      <div class="col-md-6 mb-4 border-start">
+        <h4>John Deere Tractor Driving Simulator</h4>
+        <a href="https://youtu.be/mbay6qXMXhs?si=vGuOuHAf8_tWUOJ3">
+          <img src="portfolio/assets/images/johnDeereTractorDrivingSimulator.jpeg" class="project-media">
+        </a>
+        <p>Main project of the undergraduate course "Design with Programmable Logic" which 
+          implemented Unity Game Development, VHDL Programming, the Quartus Prime Intel software, 
+          State Machines, Field-Programmable Gate Arrays (FPGAs), and Soft-Core Processors. 
+          This project was made in collaboration with John Deere as a training partner.</p>
+        <ul>
+          <li>This project consists of a John Deere Tractor Driving Simulator developed with the Unity 
+            game engine included with vehicle control via a Terasic DE10-Lite FPGA board programmed with 
+            Quartus Prime software in VHDL. </li>
+          <li>The design of a user interface composed of a configurable logic device, the Field Programmable Gate Array, 
+            provided two useful tools and a unique enriching experience for the creation of prototypes necessary to validate 
+            ideas, concepts, and solutions to real world problems.</li>
+          <li> The DE10-Lite FPGA Board was fundamental in our project and facilitated the creation of electronic device prototypes 
+            with embedded systems in an efficient and economic form. </li>
+            <li>FPGAs allow for configuration and re-configuration of hardware according to the specified needs of the project.</li>
+          <li>The FPGA board contained an accelerometer that was used for steering control, switches for gear selection, 
+            and buttons for throttle and brake. </li>
+          <li>This information registered by the board is sent via TTL/USB to the Unity developed game simulation running on a desktop computer.</li>
+          <li>When a crop is picked up, a life is lost by colliding into an obstacle, or the time is run out, this data is sent through the same channel 
+            to reflect the changes in a 7-segment display on the board. Finally, a Gumnut soft-core processor was used to interact with all interfaces 
+            via Gumnut Assembly (Gasm).</li>
+        </ul>
+        <a href="https://github.com/christianrvillarrealt/John-Deere-Tractor-Driving-Simulator.git" class="btn btn-sm btn-primary">View on GitHub</a>
+      </div>
+
+    </div>
+
+    <div class="row mb-5">
+
+      <div class="col-md-6 mb-4">
+        <h4>AquaNet IoT System for Pet Fish Care</h4>
+        <a href="https://drive.google.com/file/d/18hMJa_fMgRWp2sHZKzxe6mJStUvRCfrK/view?usp=sharing">
+          <img src="portfolio/assets/images/aquaNet.png" class="project-media">
+        </a>
+        <p>Main project for the undergraduate course "Internet of Things Implementation" and was selected among many 
+          others to be presented in the Expo Ingenierías 2023 event held in Tecnológico de Monterrey in the city of Monterrey, Mexico.</p>
+        <ul>
+          <li>Fish care requires constant attention from pet fish owners: Monitoring pH levels, lighting, and food, among other things, are all aspects 
+            that owners must manage. It can be challenging or even stressful for some. </li>
+          <li>An STM32 NUCLEO-F103RB microcontroller processed in a rate-monotonic scheduling (RMS) priority algorithm motor revolutions 
+            per minute and agricultural tractor velocity, marching and acceleration data to visualize in an LCD 16x2 screen and transfer to a 
+            Raspberry Pi 3 via UART in a Python developed graphical interface to show historical data. </li>
+          <li>Issues such as constant owner intervention and the complexity of temperature, pH, and feeding regulations are part of the lives of fish owners.</li>
+          <li>AquaNet is a comprehensive system designed to regulate and maintain optimal environmental conditions in pet fish aquariums.</li>
+          <li>This system uses NodeMCU using C++ for sensor and actuator activation, React and Vite for a web application and an SQL database to record and visualize 
+            sensor and actuator data in real time, and Postman API for building and using APIs to communicate both instruments.</li>
+          <li>Our project was praised by our hardware and software professors Claudia M. Solís Garza and Yesenia Sarahi Rivera Leyva as the best in the group, with highlights 
+            including the LED lights, 3D-printed containers, and the overall successful execution of a challenging water-related model.</li>
+          <li>The functional website and prepared presentation were noted as strong points and our team work was reflected in the high-quality result.</li>
+        </ul>
+        <a href="https://github.com/christianrvillarrealt/AquaNet" class="btn btn-sm btn-primary">View on GitHub</a>
+      </div>
+
+      <div class="col-md-6 mb-4 border-start">
+        <h4>BlackBox Digital Wallet | Financial Access Security Device in the Metaverse</h4>
+        <a href="https://youtu.be/mbay6qXMXhs?si=vGuOuHAf8_tWUOJ3">
+          <img src="portfolio/assets/images/blackBox.jpeg" class="project-media">
+        </a>
+        <p>According to UpCity, as of 2022, only 50% of business owners and tech experts have a cybersecurity 
+          plan in place, with just 43% feeling prepared for a cyberattack. Meanwhile, cybercrime has cost U.S. businesses over $6.9 trillion. 
+          This growing threat puts both businesses and consumers at risk, as cybercriminals exploit personal data, hijack digital resources, 
+          and deceive victims.</p>
+        <ul>
+          <li>During the HackMTY 2022 hackathon hosted at the Tecnológico de Monterrey university in Monterrey, Mexico, insurance firm Chubb 
+            challenged participants to develop a solution to secure Metaverse users' financial assets. </li>
+          <li>We designed BlackBox, a secure digital wallet that protects private keys and enables wireless authentication for services within the Metaverse. 
+            After 24 hours of development, BlackBox was recognized as the best solution for Chubb's challenge, earning 1st place.</li>
+        </ul>
+        <a href="https://github.com/saucesaft/blackbox-server.git" class="btn btn-sm btn-primary">View on GitHub</a>
+      </div>
+
+    </div>
+
   </div>
 </section>
 
@@ -181,7 +322,8 @@
   <div class="container" data-aos="fade-up">
     <h2>Resume</h2>
     <p>Download my latest CV for more details about my education, experience, and technical skills.</p>
-    <a href="resume.pdf" class="btn btn-primary">Download Resume</a>
+    <a href="ChristianVillarreal_CV_2025_ENG.pdf" class="btn btn-primary">Download Resume in English</a>
+    <a href="ChristianVillarreal_CV_2025_ESP.pdf" class="btn btn-primary">Download Resume in Spanish</a>
   </div>
 </section>
 
@@ -189,9 +331,9 @@
 <section id="contact" class="py-5">
   <div class="container" data-aos="fade-up">
     <h2>Contact</h2>
-    <p>Email: ruloco@example.com</p>
-    <p>GitHub: <a href="https://github.com/christianrvillarrealt" target="_blank">github.com/yourusername</a></p>
-    <p>LinkedIn: <a href="www.linkedin.com/in/christianrvillarrealt" target="_blank">linkedin.com/in/yourusername</a></p>
+    <p>Email: christianvillarrealt@gmail.com</p>
+    <p>GitHub: <a href="https://github.com/christianrvillarrealt" target="_blank">github.com/christianrvillarrealt</a></p>
+    <p>LinkedIn: <a href="www.linkedin.com/in/christianrvillarrealt" target="_blank">linkedin.com/in/christianrvillarrealt</a></p>
   </div>
 </section>
 
