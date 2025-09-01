@@ -77,14 +77,26 @@
         <a href="https://youtu.be/xguSSPaRahc?si=GPkyJPqxkQNMMWMv">
           <img src="portfolio/assets/images/autonomousNavigationSystem.png" class="project-media">
         </a>
-        <p>Final project of the Kinematics module for dexterous manipulation in a three-fingered robotic hand with 9 D.O.F.</p>
+        <p>Final project of the "Intelligent Robotics" undergraduate course where Closed-Loop PID and Image-Based Visual Servoing (IBVS) Control, Deep Learning, Classical Computer Vision, 
+        and Embedded Systems learnings are applied to a differential-drive robot named PuzzleBot provided by Manchester Robotics Ltd. capable of navigating autonomously in a structured 
+        environment. This was made possible by the guidance and teachings of professors Dr. Luis Alberto Muñoz Ubando, Mario Guillermo Martínez Guerrero, and Arturo Eduardo Cerón López.</p>
+        <p>🎯 Key features:</p>
         <ul>
-          <li>Applies the Fixed-Point Rolling-Sliding motion planning algorithm for dexterous manipulation in a three-fingered robotic hand with three degrees of freedom each.</li>
-          <li>The algorithm considers kinematic constraints, grip stability, and compliant movements, enabling precise object manipulation.</li>
-          <li>The implementation included mathematical analysis, the definition of kinematic equations, the simulation of the 9 D.O.F hand, validation done with examples, and an analysis of future improvements for performance optimization.</li>
-          <li>The results demonstrate the viability of the algorithm, suggesting improvements for future applications in advanced robotics.</li>
+          <li>🔹 Line tracking with homography & Bird’s Eye View (BEV) transformation, powered by CLAHE, filtering, and morphological operations.</li>
+          <li>🔹 Traffic light & sign detection with YOLOv10 + TensorRT at >100 FPS on Jetson Nano, fine-tuned for robust performance.</li>
+          <li>🔹 Intersection handling via classical vision, Finite State Machine (FSM), and dynamic waypoint generation.</li>
+          <li>🔹 Hybrid architecture: Jetson Nano (ROS 2 + high-level control) + ESP32 Hackerboard (microROS + low-level control).</li>
+          <li>🔹 Modular ROS 2 implementation in Python/C++, with real-time visualization in RViz & OpenCV.</li>
         </ul>
-        <a href="https://github.com/richy-gs/TE3001B_ws/blob/main/src/Week5/retoFinal/finalProject.java" class="btn btn-sm btn-primary">View on GitHub</a>
+
+      <p>🎥 Demo highlights:</p>
+      <ul>
+        <li>1️⃣ Robot’s physical & electronic design.</li>
+        <li>2️⃣ Distributed system architecture.</li>
+        <li>3️⃣ Full autonomous run: line following, sign recognition, traffic light handling.</li>
+        <li>4️⃣ Real-time visualization tools.</li>
+      </ul>
+        <a href="https://github.com/MSR325/MSRpuzzlebot_control.git">View on GitHub</a>
       </div>
 
       <div class="col-md-6 mb-4 border-start">
