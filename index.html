@@ -34,7 +34,7 @@
   <div class="container" data-aos="fade-up">
     <img src="portfolio/assets/images/profile.jpeg" alt="Profile picture of Christian Villarreal" class="profile-img mb-4">
     <h1 class="display-1">Christian Villarreal</h1>
-    <h2 class="display-6">Robotics & Digital Systems Engineering Student</h2>
+    <h2 class="display-6">Robotics & Digital Systems Engineer</h2>
     <h2 class="lead">Tecnológico de Monterrey, Campus Monterrey</h2>
     <a href="#projects" class="btn btn-light m-2">View Projects</a>
     <a href="ChristianVillarreal_CV_2025_ENG.pdf" class="btn btn-outline-light m-2">Download Resume</a>
@@ -45,10 +45,12 @@
 <section id="about" class="py-5">
   <div class="container" data-aos="fade-up">
     <h2>About Me</h2>
-    <p> I'm a third-year Robotics & Digital Systems student at Tecnológico de Monterrey.
-    I am currently developing an autonomous navigation, control system, and computer vision based differential drive robot project with Manchester Robotics Ltd., 
-    a software and electronics member of the Unmanned Surface Vehicle project at VantTec, a service Intern at Multi-Robotic Systems Laboratory and currently 
-    learning about and developing autonomous navigation, control systems, computer vision, and AI projects.</p>
+    <p> I am a senior full-time student pursuing a B.S. in Robotics and Digital Systems Engineering at Tecnológico de Monterrey 
+    since 2022 with expected graduation in 2026. Currently a General Visting Exchange Student of Computer Science and Technology 
+    at Beijing Institute of Technology who completed a month-long summer program for Emerging Technologies in Electronics Engineering.</p>
+    <p>Avid Software and Electronics and Embedded Systems Member of the 
+    Unmanned Surface Vehicle project at VantTec since 2023 and participant of several international robotics competitions and researcher at the Multi-Robotic Systems Laboratory in multi-agent 
+    robotic and unmanned aerial vehicle experiments. Currently learning about and developing autonomous navigation, control systems, computer vision, and AI projects.</p>
   </div>
 </section>
 
@@ -57,10 +59,14 @@
   <div class="container" data-aos="fade-up">
     <h2>Skills</h2>
     <ul>
-      <li>Programming: Python, C++, C, C#, MATLAB, Javascript, Dart</li>
-      <li>Frameworks: ROS 2, OpenCV, Open3D</li>
-      <li>Simulation: CoppeliaSim, Gazebo</li>
-      <li>Embedded Systems: NVIDIA Jetson, STM32, Raspberry Pi, Arduino</li>
+      <h5>Programming:</h5>
+      <li>Python, C++, C, C#, MATLAB, VHDL, Verilog, Assembly, Javascript, Dart</li>
+      <h5>Frameworks & Tools:</h5>
+      <li>ROS2, Simulink, KiCad, EasyEDA, Linux, PyTorch, TensorFlow, Docker, OpenCV, , Github, Open3D, Processing IDE</li>
+      <h5>Simulation:</h5>
+      <li>CoppeliaSim, Gazebo, MuJoCo, CoppeliaSim, LTSpice, Unity</li>
+      <h5>Embedded Systems:</h5>
+      <li>NVIDIA Jetson, STM32, Raspberry Pi, Arduino, FPGA</li>
     </ul>
   </div>
 </section>
@@ -70,45 +76,116 @@
   <div class="container" data-aos="fade-up">
     <h2>Projects</h2>
 
-        <div class="row mb-5">
+      <div class="row mb-5">
 
       <div class="col-md-6 mb-4">
         <h4>Autonomous Navigation System with Vision, Machine Learning and Control</h4>
-        <a href="https://youtu.be/xguSSPaRahc?si=GPkyJPqxkQNMMWMv">
-          <img src="portfolio/assets/images/autonomousNavigationSystem.png" class="project-media">
-        </a>
+        <div class="slideshow">
+          <a href="https://youtu.be/jrpz46wu-WU?si=tNr0iUarCpuMibK7">
+            <img src="portfolio/assets/images/autonomousNavSystem.png" class="project-media active">
+            <img src="portfolio/assets/images/autonomousNavSystemObjectives.png" class="project-media">
+            <img src="portfolio/assets/images/autonomousNavSystemPhysicalAndElectronicDesign.png" class="project-media">
+            <img src="portfolio/assets/images/autonomousNavSystemSoftwareArchitecture.png" class="project-media">
+          </a>
+        </div>
         <p>Final project of the "Intelligent Robotics" undergraduate course where Closed-Loop PID and Image-Based Visual Servoing (IBVS) Control, Deep Learning, Classical Computer Vision, 
-        and Embedded Systems learnings are applied to a differential-drive robot named PuzzleBot provided by Manchester Robotics Ltd. capable of navigating autonomously in a structured 
-        environment. This was made possible by the guidance and teachings of professors Dr. Luis Alberto Muñoz Ubando, Mario Guillermo Martínez Guerrero, and Arturo Eduardo Cerón López.</p>
+        and Embedded Systems learnings are applied to a differential-drive robot named PuzzleBot provided by <a href="https://manchester-robotics.com/">Manchester Robotics Ltd.</a> capable of 
+        navigating autonomously in a structured environment. This was made possible by the guidance and teachings of professors <a href="https://research.tec.mx/vivo-tec/display/PID_479719">Dr. Luis Alberto Muñoz Ubando</a>, 
+        <a href="https://www.linkedin.com/in/mario-gmo-mtz-gro/?originalSubdomain=fr">Mario Guillermo Martínez Guerrero</a>, and <a href="https://research.tec.mx/vivo-tec/display/PID_491289">Arturo Eduardo Cerón López</a>.</p>
         <p>🎯 Key features:</p>
         <ul>
-          <li>🔹 Line tracking with homography & Bird’s Eye View (BEV) transformation, powered by CLAHE, filtering, and morphological operations.</li>
-          <li>🔹 Traffic light & sign detection with YOLOv10 + TensorRT at >100 FPS on Jetson Nano, fine-tuned for robust performance.</li>
-          <li>🔹 Intersection handling via classical vision, Finite State Machine (FSM), and dynamic waypoint generation.</li>
-          <li>🔹 Hybrid architecture: Jetson Nano (ROS 2 + high-level control) + ESP32 Hackerboard (microROS + low-level control).</li>
-          <li>🔹 Modular ROS 2 implementation in Python/C++, with real-time visualization in RViz & OpenCV.</li>
+          <li>Line tracking with homography & Bird’s Eye View (BEV) transformation, powered by CLAHE, filtering, and morphological operations.</li>
+          <li>Traffic light & sign detection with YOLOv10 + TensorRT at >100 FPS on Jetson Nano, fine-tuned for robust performance.</li>
+          <li>Intersection handling via classical vision, Finite State Machine (FSM), and dynamic waypoint generation.</li>
+          <li>Hybrid architecture: Jetson Nano (ROS 2 + high-level control) + ESP32 Hackerboard (microROS + low-level control).</li>
+          <li>Modular ROS 2 implementation in Python/C++, with real-time visualization in RViz & OpenCV.</li>
         </ul>
 
       <p>🎥 Demo highlights:</p>
       <ul>
-        <li>1️⃣ Robot’s physical & electronic design.</li>
-        <li>2️⃣ Distributed system architecture.</li>
-        <li>3️⃣ Full autonomous run: line following, sign recognition, traffic light handling.</li>
-        <li>4️⃣ Real-time visualization tools.</li>
+        <li>Robot’s physical & electronic design.</li>
+        <li>Distributed system architecture.</li>
+        <li>Full autonomous run: line following, sign recognition, traffic light handling.</li>
+        <li>Real-time visualization tools.</li>
       </ul>
-        <a href="https://github.com/MSR325/MSRpuzzlebot_control.git">View on GitHub</a>
+        <a href="https://github.com/MSR325/MSRpuzzlebot_control.git" class="btn btn-sm btn-primary">View on GitHub</a>
+      </div>
+      
+            <div class="col-md-6 mb-4 border-start">
+        <h4>VantTec Unmanned Surface Vehicle (USV)</h4>
+        <div class="slideshow">
+          <a href="https://www.youtube.com/watch?v=3zR33yOc7Bs">
+            <img src="portfolio/assets/images/RoboBoat2025VantTecTeamBoat.jpeg" class="project-media active">
+            <img src="portfolio/assets/images/RoboBoat2025VantTecTeam.jpeg" class="project-media">
+            <img src="portfolio/assets/images/RoboBoat2025.jpeg" class="project-media">
+            <img src="portfolio/assets/images/VTECSIV.jpeg" class="project-media">
+            <img src="portfolio/assets/images/VTECSIVPresentation.jpeg" class="project-media">
+            <img src="portfolio/assets/images/VantTecUSVTeam.jpeg" class="project-media">
+            <img src="portfolio/assets/images/VantTecRoboBoat2024.jpeg" class="project-media">
+            <img src="portfolio/assets/images/RB24.jpeg" class="project-media">
+            <img src="portfolio/assets/images/VantTecSprint5.jpeg" class="project-media">
+          </a>
+        </div>
+        <p>The Unmanned Surface Vehicle (USV) consists of an autonomous boat project carried out within the student group <a href="https://www.vanttec.com/">VantTec</a> team.</p>
+        <ul>
+          <li>The USV project has the purpose of meeting all the challenges of the annual RoboBoat competitions organized by RoboNation.</li>
+          <li>It seeks to integrate control systems, mission solutions, autonomous navigation, and object recognition.</li>
+          <li>The project has assisted the team in publishing scientific research papers on topics related to control, 3D vision, and obstacle detection.</li> 
+          <li>It has been focused on innovation and social, economic, and environmental well-being through the AWAS project: Autonomous Water Management System.</li>
+        </ul>
+        <p>This project has received multiple awards which are listed below:</p>
+          <ul>
+            <li>Received <a href="https://www.youtube.com/watch?v=NR3n0af8PSg">Special Persistence Award</a> of $250 from <a href="https://robonation.org/">RoboNation</a> for our outstanding participation as finalists in the RoboBoat 2024 competition with our 
+              V-TEC-S-III unmanned surface vehicle project.</li>
+            <li>Top 3 Finalist in Launch Category of <a href="https://live.tec.mx/videos/finalxignuxchallenge2024">XIGNUX Challenge 2024</a> for data-driven project "Autonomous Water Administration System" involving an autonomous unmanned surface vehicle with sensors for water-body monitoring in Mexico.</li>
+            <li>2nd Place at products or services for technology-based entrepreneurship category for "Autonomus Water Administration System" project at the 24th Expo Ingenierías event held by Tecnológico de Monterrey.</li>
+            <li>3rd place at social impact category for "Autonomous Water Administration System" project at the 25th Expo Ingenierías event held by Tecnológico de Monterrey.</li>
+          </ul>
+        <a href="https://github.com/vanttec/vanttec_usv.git" class="btn btn-sm btn-primary">View on GitHub</a>
+      </div>
+
+    </div>
+
+    <div class="row mb-5">
+
+      <div class="col-md-6 mb-4">
+        <h4>Multi-Robot Control and State Monitoring for Swarm Experiments</h4>
+        <div class="slideshow">
+          <a href="https://drive.google.com/file/d/1Nj-LX1kKAyhdQDGv3B8w3NR5hBn0K0Qn/view?usp=sharing">
+            <img src="portfolio/assets/images/multiRobotControlSwarmExperiment1.jpeg" class="project-media active">
+            <img src="portfolio/assets/images/multiRobotControlSwarmExperiment2.jpeg" class="project-media">
+            <img src="portfolio/assets/images/multiRobotControlSwarmExperiment3.jpeg" class="project-media">
+          </a>
+        </div>
+        <p>Project developed with the guidance and assistance of professor in control systems <a href="https://research.tec.mx/vivo-tec/display/PID_177546">Dr. Luis Guerrero Bonilla</a> at the 
+          <a href="https://tecscience.tec.mx/en/tech/robotics-laboratory/">Multi-Robotic Systems Laboratory (MRSL)</a> at the Tecnológico de Monterrey campus from the city of Monterrey. implements a MATLAB-based interface for automatic discovery, connection, and control of multiple mobile robots 
+          (Puzzlebots) in a ROS2 environment. It connects to Vicon motion capture topics for real-time position feedback, establishes ROS2 publishers for wheel velocity commands, and 
+          organizes all communication into a MATLAB object for streamlined multi-robot operation.</p>
+        <p>🎯 Key features:</p>
+        <ul>
+          <li>Vicon topics associated with PuzzleBots are scanned for real message traffic while preventing wasted connections to inactive topics and subscribers and publishers are dynamically 
+          created to receive Vicon-based pose data and send wheel velocity commands.</li>
+          <li>Any number of PuzzleBots are supported with the required communication channels, operating within a specified DDS Domain ID.</li>
+          <li>This experiment tested the ability of PuzzleBots to autonomously reach an initial position and perform for a defined number of iterations navigation within a circle gradient.</li>
+          <li>The use cases of this experiment include the control of a fleet of differential drive robots in formation or distributed tasks, navigation testing leveraging precise motion capture 
+          for closed-loop control experiments, and a robust base for implementing localization, path planning, and control algorithms.</li>
+        </ul>
+
+        <a href="https://drive.google.com/file/d/1Nj-LX1kKAyhdQDGv3B8w3NR5hBn0K0Qn/view?usp=sharing" class="btn btn-sm btn-primary">View Demonstration Video</a>
       </div>
 
       <div class="col-md-6 mb-4 border-start">
         <h4>Visual Tracking Surveillance of Land Mobile Robots by Unmanned Aerial Vehicle</h4>
-        <a href="https://youtu.be/-qD8aGkvTdU?si=2-cTGjXG_uDlvVOv">
-          <img src="portfolio/assets/images/visualTrackingSurveillanceDrone.png" class="project-media">
-        </a>
-        <p>The project consisted of the development of a DJI RoboMaster TT unmanned aerial vehicle with Image-Based Visual Dynamic Servoing capabilities 
-          in order to patrol and monitor the activity of a differential drive robot called Puzzlebot produced by Manchester Robotics Ltd. 
-          This robot will fly an arbitrary trajectory while the drone will seek to maintain a continuous association with it and its location via an 
-          ArUco marker between frames for full visualization and monitoring of the robot. After the Puzzlebot completes its trajectory and the drone runs out of 
-          flight time, the drone will need to maneuver a landing strategy.</p>
+        <div class="slideshow">
+          <a href="https://youtu.be/-qD8aGkvTdU?si=2-cTGjXG_uDlvVOv">
+            <img src="portfolio/assets/images/visualTrackingSurveillanceDrone.jpeg" class="project-media active">
+            <img src="portfolio/assets/images/visualTrackingSurveillanceDroneScreen.jpeg" class="project-media">
+            <img src="portfolio/assets/images/visualTrackingSurveillanceDroneExperiment.jpeg" class="project-media">
+          </a>
+        </div>
+        <p>Final project of the "Unmanned Aerial Vehicles" module of the "Intelligent Robotics" course taught by engineer in communications, electrical engineering and control systems 
+          <a href="https://research.tec.mx/vivo-tec/display/PID_292306">Dr. Herman Castañeda</a>. It consisted of the a DJI RoboMaster TT unmanned aerial vehicle with Image-Based Visual Dynamic Servoing capabilities in order to patrol and monitor 
+          the activity of a differential drive robot. This was performed at the <a href="https://tecscience.tec.mx/en/tech/robotics-laboratory/">Multi-Robotic Systems Laboratory</a>.</p>
         <ul>
           <li>The differential drive robot called Puzzlebot, whose trajectory is independent of any eternal robot. In theory, the robot can perform any trajectory.</li>
           <li>The DJI RoboMaster TT unmanned aerial vehicle will implement robot monitoring actions through its lower camera using the Visual Tracking technique.</li> 
@@ -127,9 +204,13 @@
 
       <div class="col-md-6 mb-4">
         <h4>Dexterous Manipulation of 9 D.O.F Robotic Hand</h4>
-        <a href="https://youtu.be/xguSSPaRahc?si=GPkyJPqxkQNMMWMv">
-          <img src="portfolio/assets/images/fixedPointRollingSliding.png" class="project-media">
-        </a>
+        <div class="slideshow">
+          <a href="https://youtu.be/xguSSPaRahc?si=GPkyJPqxkQNMMWMv">
+            <img src="portfolio/assets/images/fixedPointRollingSliding.png" class="project-media active">
+            <img src="portfolio/assets/images/fixedPointRollingSliding1.png" class="project-media">
+            <img src="portfolio/assets/images/fixedPointRollingSliding2.png" class="project-media">
+          </a>
+        </div>
         <p>Final project of the Kinematics module for dexterous manipulation in a three-fingered robotic hand with 9 D.O.F.</p>
         <ul>
           <li>Applies the Fixed-Point Rolling-Sliding motion planning algorithm for dexterous manipulation in a three-fingered robotic hand with three degrees of freedom each.</li>
@@ -137,20 +218,24 @@
           <li>The implementation included mathematical analysis, the definition of kinematic equations, the simulation of the 9 D.O.F hand, validation done with examples, and an analysis of future improvements for performance optimization.</li>
           <li>The results demonstrate the viability of the algorithm, suggesting improvements for future applications in advanced robotics.</li>
         </ul>
+        <p>To learn more about the Fixed-Point Rolling-Sliding Algorithm implemented in this project, check out the following resource: <a href="https://ieeexplore.ieee.org/document/525326">https://ieeexplore.ieee.org/document/525326</a></p>
         <a href="https://github.com/richy-gs/TE3001B_ws/blob/main/src/Week5/retoFinal/finalProject.java" class="btn btn-sm btn-primary">View on GitHub</a>
       </div>
 
       <div class="col-md-6 mb-4 border-start">
         <h4>PID DC Motor Control with ROS2 and Micro-ROS</h4>
-        <a href="https://youtu.be/J7guC097kAk?si=VqbC4QT6imFDmymp">
-          <img src="portfolio/assets/images/dcMotorPidControl.png" class="project-media">
-        </a>
+        <div class="slideshow">
+          <a href="https://youtu.be/J7guC097kAk?si=VqbC4QT6imFDmymp">
+            <img src="portfolio/assets/images/dcMotorPidControl.png" class="project-media active">
+            <img src="portfolio/assets/images/dcMotorPidControl1.png" class="project-media">
+            <img src="portfolio/assets/images/dcMotorPidControl2.png" class="project-media">
+          </a>
+        </div>
         <p>Main project for the undergraduate course "Robotics Fundamentals" which 
           applies Digital Control System Design, ROS2 Interfacing, micro-ROS, and 
           Experimental Mathematical Model Coefficients Determination and Controller 
-          Performance Validation. This project was made in collaboration with Manchester 
-          Robotics Ltd. as a training partner. The project aimed to precisely control the 
-          velocity of a DC motor.</p>
+          Performance Validation. This project was made in collaboration with <a href="https://manchester-robotics.com/">Manchester Robotics Ltd.</a>
+          as a training partner. The project aimed to precisely control the velocity of a DC motor.</p>
         <ul>
           <li>A PID controller was implemented within the ROS2 and micro-ROS robotics frameworks that simplify robotic application development bridged with embedded and deep-embedded robot components.</li>
           <li>The system receives via a ROS2 topic a variable reference angular velocity value generated by a setpoint node which represents the desired angular velocity.</li>
@@ -343,7 +428,7 @@
 <section id="contact" class="py-5">
   <div class="container" data-aos="fade-up">
     <h2>Contact</h2>
-    <p>Email: christianvillarrealt@gmail.com</p>
+    <p>Email: <a href="mailto:christianvillarrealt@outlook.com">christianvillarrealt@outlook.com</a></p>
     <p>GitHub: <a href="https://github.com/christianrvillarrealt" target="_blank">github.com/christianrvillarrealt</a></p>
     <p>LinkedIn: <a href="www.linkedin.com/in/christianrvillarrealt" target="_blank">linkedin.com/in/christianrvillarrealt</a></p>
   </div>
@@ -359,6 +444,18 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
+</script>
+<script>
+  document.querySelectorAll(".slideshow").forEach(slideshow => {
+    let slides = slideshow.querySelectorAll("img");
+    let index = 0;
+
+    setInterval(() => {
+      slides[index].classList.remove("active");
+      index = (index + 1) % slides.length;
+      slides[index].classList.add("active");
+    }, 3000); // change every 3 seconds
+  });
 </script>
 </body>
 </html>

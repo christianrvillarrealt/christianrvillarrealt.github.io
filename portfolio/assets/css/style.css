@@ -83,3 +83,13 @@ ul li::before {
   display: block;
   object-fit: cover;
 }
+
+.slideshow img {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.slideshow img.active {
+  display: block;
+}
